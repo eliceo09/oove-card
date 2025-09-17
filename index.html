@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splash + Reproductor</title>
+
+    <!-- Fuente -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Splash -->
+      <div id="splash"></div>
+
+      <!-- Contenido -->
+      <div id="contenido" class="container text-white text-center py-5">
+        <h1>Bienvenido a mi página Agos 💗</h1>
+        <p>
+          Tú lo dijiste, una acción vale más que mil palabras. Y hoy quiero
+          mostrarte un poco de mí de la manera que mejor me sale ahora, y
+          también de lo que quiero convertirme más adelante.
+        </p>
+        <p>
+          Así que aquí tienes un pequeño reproductor de música. No es gran cosa,
+          pero es un comienzo. Y espero que te guste la canción que he elegido
+          para ti.
+        </p>
+        <p>
+          Gracias por estar ahí, por escucharme y por apoyarme. Eres increíble,
+          Agos. Nunca lo olvides.
+        </p>
+        <p>Con todo mi cariño Matias</p>
+      </div>
+
+      <!-- 🎶 Reproductor -->
+      <div class="player">
+        <button class="btn-player" id="prev">⏮</button>
+        <button class="btn-player" id="play">▶</button>
+        <button class="btn-player" id="next">⏭</button>
+        <span id="song-title">Sin canción</span>
+
+        <!-- Audio invisible -->
+        <audio id="audio"></audio>
+
+        <div class="progress" id="progress">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS propio -->
+    <script src="js/player.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

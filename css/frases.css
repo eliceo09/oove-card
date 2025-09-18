@@ -1,0 +1,74 @@
+#body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/bg-flowers.png");
+  background-repeat: repeat; /* Hace el mosaico */
+  background-size: 200px; /* Ajusta el tamaño de cada bloque */
+  background-position: center; /* Centra la repetición */
+  background-attachment: fixed; /* Fija el fondo al hacer scroll */
+  filter: grayscale(100%); /* Blanco y negro total */
+}
+
+.reveal-btn {
+  margin-bottom: 30%;
+  position: relative;
+  width: 220px;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Texto oculto detrás */
+.reveal-btn .text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Inicialmente invisible */
+  transition: opacity 0.4s ease;
+  color: black; /* Texto visible al revelar */
+  z-index: 0;
+}
+
+/* Capa de color sólido arriba */
+.reveal-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: crimson; /* Color inicial */
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+/* Al presionar */
+.reveal-btn:active::after {
+  opacity: 0; /* Se desvanece */
+}
+
+.reveal-btn:active .text {
+  opacity: 1; /* Aparece el texto */
+}
+
+#caja {
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+#titulofrases {
+  font-family: "Poppins", sans-serif; /* elegante y moderna */
+  color: #544258; /* rojo vibrante */
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}

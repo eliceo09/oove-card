@@ -1,0 +1,29 @@
+/* CSS */
+.app-root {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* contenedor de las imágenes de fondo */
+#flower-bg {
+  position: fixed; /* o absolute dentro de un contenedor */
+  inset: 0;
+  pointer-events: none; /* no interferir con clicks */
+  z-index: 0; /* detrás del contenido si tu contenido tiene >0 */
+}
+
+/* cada flor */
+.flower {
+  position: absolute;
+  will-change: transform, opacity;
+  transform-origin: center center;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+  mix-blend-mode: normal; /* probar multiply/luminosity si querés otro look */
+  opacity: 0.9;
+}
+#bodyFlowers {
+  background-image: url("../img/BG-BACK.png");
+}

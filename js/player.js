@@ -35,6 +35,9 @@ const songs = [
   {
     title: "Mi canción favorita De mi banda favorita - Queen",
     file: "./music/Queen - Love Of My Life (Traducida al español) - stephstyles1994 (1).mp3",
+
+    title: "Let It BE and BE YOURSELF - The Beatles",
+    file: "./music/Let It Be (Remastered 2009) - The Beatles.mp3",
   },
 ];
 

@@ -5,11 +5,11 @@
 
   // lista de flores (pone tus rutas reales)
   const flowers = [
-    "./img/amapolas.jfif",
-    "/img/fBlancas.jfif",
-    "/img/fNegras.webp",
-    "/img/rosasnegras.jfif",
-    "/img/images.jfif",
+    "./img/amapolas.png",
+    "/img/fBlancas.png",
+    "/img/fNegra.png",
+    "/img/rosasnegras.png",
+    "/img/images.png",
   ];
 
   const N = 60; // cantidad de florecitas (ajusta)

@@ -7,7 +7,7 @@
 
 /* contenedor de las imágenes de fondo */
 #flower-bg {
-  position: fixed; /* o absolute dentro de un contenedor */
+  position: absolute; /* o absolute dentro de un contenedor */
   inset: 0;
   pointer-events: none; /* no interferir con clicks */
   z-index: 0; /* detrás del contenido si tu contenido tiene >0 */

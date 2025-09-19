@@ -33,7 +33,7 @@
     let isRare = false;
 
     // probabilidad de 10% de que toque raro
-    if (Math.random() < 0.1) {
+    if (Math.random() < 0.30) {
       pool = poemasRaros;
       isRare = true;
     } else {

@@ -1,23 +1,36 @@
+const images = [
+  "./img/hero-love.jpg",
+  "./img/hero-fantasy.jpg",
+  "./img/hero-cry.jpg",
+  "./img/hero-red.jpg",
+];
+
+let lastImage = null; // Mantener en memoria durante la sesión
+
+function getRandomNonRepeating(arr, last) {
+  if (!arr || arr.length === 0) return null;
+  if (arr.length === 1) return arr[0];
+  let choice;
+  do {
+    choice = arr[Math.floor(Math.random() * arr.length)];
+  } while (choice === last);
+  return choice;
+}
+
 window.addEventListener("load", () => {
   const splash = document.getElementById("splash");
   const contenido = document.getElementById("contenido");
+  if (!splash) return;
 
-  // Array de imágenes para el splash
-  const images = [
-    "./img/hero-love.jpg",
-    "./img/hero-fantasy.jpg",
-    "./img/hero-cry.jpg",
-    "./img/hero-red.jpg",
-  ];
-  splash.classList.add("hidden");
-  // Elegir una imagen aleatoria
-  const randomImage = images[Math.floor(Math.random() * images.length)];
+  // Elegir splashart distinta a la última usada en esta sesión
+  const randomImage = getRandomNonRepeating(images, lastImage);
+  lastImage = randomImage;
   splash.style.backgroundImage = `url('${randomImage}')`;
 
   // Mostrar splash 2 segundos y luego ocultar
   setTimeout(() => {
     splash.classList.add("hidden");
-    contenido.classList.add("visible");
+    if (contenido) contenido.classList.add("visible");
     document.body.style.overflow = "auto";
   }, 2000);
 });

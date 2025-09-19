@@ -21,31 +21,65 @@
     "Eres la flor que da color a mis días grises.",
   ];
 
+  const poemasRaros = [
+    "Me pregunto si tus manos sienten las mías, si tus ojos me buscan cuando cierro los míos. Te pienso en cada latido, te deseo en cada silencio. Y aunque no digas lo que guardas, yo no callo mi amor: grita en mí, me atraviesa, y no hay miedo que lo detenga.",
+    "Si pudiera tomar tus pensamientos, los guardaría junto a los míos. Te extraño en cada esquina, te deseo en cada respiración. Y aunque el miedo intente frenarnos, mi corazón no deja de quererte.",
+  ];
+
   let lastPoem = null;
 
   function getRandomPoem() {
+    let pool;
+    let isRare = false;
+
+    // probabilidad de 10% de que toque raro
+    if (Math.random() < 0.1) {
+      pool = poemasRaros;
+      isRare = true;
+    } else {
+      pool = poemas; // acá estaba el error
+    }
+
     let poem;
     do {
-      poem = poemas[Math.floor(Math.random() * poemas.length)];
-    } while (poem === lastPoem);
+      poem = pool[Math.floor(Math.random() * pool.length)];
+    } while (poem === lastPoem && pool.length > 1);
+
     lastPoem = poem;
-    return poem;
+    return { poem, isRare };
   }
 
   function showPoem() {
+    const { poem, isRare } = getRandomPoem();
+
     const shield = document.createElement("div");
     shield.className = "openshield";
-    shield.textContent = getRandomPoem();
+
+    if (isRare) {
+      const title = document.createElement("h2");
+      title.textContent = "🌟 Poema Largo 🌟";
+      title.className = "poema-raro-title";
+
+      const content = document.createElement("p");
+      content.textContent = poem;
+
+      shield.appendChild(title);
+      shield.appendChild(content);
+    } else {
+      shield.textContent = poem;
+    }
 
     document.body.appendChild(shield);
 
-    // opcional: que desaparezca después de unos segundos
-    setTimeout(() => {
-      shield.remove();
-    }, 5000); // 5 segundos visible
+    setTimeout(
+      () => {
+        shield.remove();
+      },
+      isRare ? 8000 : 6000
+    );
   }
 
-  // Mostrar apenas cargue
+  // mostrar apenas cargue
   window.onload = () => {
     showPoem();
   };

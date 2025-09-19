@@ -38,20 +38,16 @@ window.addEventListener("load", () => {
 // --- Reproductor ---
 const songs = [
   {
-    title: "Lo que te pediria - Louis Armstrong",
-    file: "./music/Louis Armstrong - A Kiss To Build A Dream On (Live At The BBC) - LouisArmstrongVEVO.mp3",
+    title: "Deseándote...",
+    file: "./music/Deseandote.mp3",
   },
   {
-    title: "La indirecta que me casaste D1 😒 - Mana",
-    file: "./music/Maná - Oye Mi Amor - LatinHype.mp3",
+    title: "estoy loco por que.....",
+    file: "./music/Que locura Enamorarme De Ti.mp3",
   },
   {
-    title: "Let It BE and BE YOURSELF - The Beatles",
-    file: "./music/Let It Be (Remastered 2009) - The Beatles.mp3",
-  },
-  {
-    title: "Mi canción favorita De mi banda favorita - Queen",
-    file: "./music/Queen - Love Of My Life (Traducida al español) - stephstyles1994 (1).mp3",
+    title: "perdoname por ser....",
+    file: "./music/necio.mp3",
   },
 ];
 

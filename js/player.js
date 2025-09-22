@@ -38,16 +38,16 @@ window.addEventListener("load", () => {
 // --- Reproductor ---
 const songs = [
   {
-    title: "Deseándote...",
-    file: "./music/Deseandote.mp3",
+    title: "mi miedo es...",
+    file: "./music/Cuando no.mp3",
   },
   {
-    title: "estoy loco por que.....",
-    file: "./music/Que locura Enamorarme De Ti.mp3",
+    title: "me gustas mucho",
+    file: "./music/Me Gustas Mucho.mp3",
   },
   {
-    title: "perdoname por ser....",
-    file: "./music/necio.mp3",
+    title: "i💗you",
+    file: "./music/Vámonos a Marte.mp3",
   },
 ];
 

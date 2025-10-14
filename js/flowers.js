@@ -10,6 +10,7 @@
     "/img/fNegra.png",
     "/img/rosasnegras.png",
     "/img/images.png",
+    "/img/favicon.png",
   ];
 
   const poemas = [
@@ -33,7 +34,7 @@
     let isRare = false;
 
     // probabilidad de 10% de que toque raro
-    if (Math.random() < 0.30) {
+    if (Math.random() < 0.3) {
       pool = poemasRaros;
       isRare = true;
     } else {
@@ -75,7 +76,7 @@
       () => {
         shield.remove();
       },
-      isRare ? 8000 : 6000
+      isRare ? 20000 : 10000
     );
   }
 
@@ -84,7 +85,7 @@
     showPoem();
   };
 
-  const N = 60; // cantidad de florecitas (ajusta)
+  const N = 200; // cantidad de florecitas (ajusta)
   const vw = () =>
     Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
   const vh = () =>
@@ -103,7 +104,7 @@
 
     function generateFlowers(amount = 150) {
       // Podés subir el número para más densidad
-      for (let i = 0; i < amount; i++) {
+      for (let i = 10; i < amount; i++) {
         makeFlower();
       }
     }

@@ -72,3 +72,11 @@
   font-size: 2.5em;
   margin-bottom: 20px;
 }
+
+.reveal-btn.open::after {
+  opacity: 0; /* Capa de color desaparece */
+}
+
+.reveal-btn.open .text {
+  opacity: 1; /* Texto se muestra */
+}

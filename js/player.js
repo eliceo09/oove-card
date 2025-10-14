@@ -38,16 +38,16 @@ window.addEventListener("load", () => {
 // --- Reproductor ---
 const songs = [
   {
-    title: "mi miedo es...",
-    file: "./music/Cuando no.mp3",
+    title: "sabes que siento",
+    file: "./music/amar y querer.mp3",
   },
   {
-    title: "me gustas mucho",
-    file: "./music/Me Gustas Mucho.mp3",
+    title: "sabes que te amo",
+    file: "./music/amor despues del amor.mp3",
   },
   {
     title: "i💗you",
-    file: "./music/Vámonos a Marte.mp3",
+    file: "./music/no se tu.mp3",
   },
 ];
 

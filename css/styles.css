@@ -58,13 +58,15 @@ main {
   opacity: 1;
 }
 #contenido h1 {
-  font-family: "Poppins", sans-serif; /* elegante y moderna */
-  color: #fdff9b; /* rojo vibrante */
+  font-family: "Poppins", sans-serif !important; /* elegante y moderna */
+  color: #ab46d3; /* rojo vibrante */
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* sombra para destacar */
   margin-bottom: 20px;
   transition: transform 0.5s ease, color 0.5s ease;
+  size: 3.5rem !important;
+  font-weight: 1000;
+  -webkit-text-stroke: 1px #000000;
 }
-
 /* Efecto hover opcional */
 #contenido h1:hover {
   transform: scale(1.05); /* pequeño zoom */
@@ -128,4 +130,10 @@ main {
 }
 p {
   background-color: #66666680; /* Color de fondo con opacidad */
+}
+
+.pintImg {
+  width: 100% !important;
+  height: 70vh !important; /* ocupa el 60% del alto de la pantalla */
+  object-fit: cover; /* recorta sin deformar */
 }

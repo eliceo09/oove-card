@@ -85,7 +85,7 @@
     showPoem();
   };
 
-  const N = 1git add .00; // cantidad de florecitas (ajusta)
+  const N = 100; // cantidad de florecitas (ajusta)
   const vw = () =>
     Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
   const vh = () =>

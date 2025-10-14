@@ -49,6 +49,10 @@ const songs = [
     title: "i💗you",
     file: "./music/no se tu.mp3",
   },
+  {
+    title: "mi vida",
+    file: "./music/cuando no.mp3",
+  },
 ];
 
 let currentSong = 0;

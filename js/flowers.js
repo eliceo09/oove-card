@@ -85,7 +85,7 @@
     showPoem();
   };
 
-  const N = 200; // cantidad de florecitas (ajusta)
+  const N = 1git add .00; // cantidad de florecitas (ajusta)
   const vw = () =>
     Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
   const vh = () =>
@@ -104,7 +104,7 @@
 
     function generateFlowers(amount = 150) {
       // Podés subir el número para más densidad
-      for (let i = 10; i < amount; i++) {
+      for (let i = 0; i < amount; i++) {
         makeFlower();
       }
     }

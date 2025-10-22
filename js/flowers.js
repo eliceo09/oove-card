@@ -14,18 +14,21 @@
   ];
 
   const poemas = [
-    "Eres la flor que ilumina mi vida.",
-    "Cada pétalo de tu ser es un verso de amor.",
-    "En el jardín de mi corazón, tú eres la flor más hermosa.",
-    "Tu belleza florece en cada rincón de mi alma.",
-    "Como una flor en primavera, mi amor por ti renace cada día.",
-    "Eres la flor que da color a mis días grises.",
+    "La primavera despierta con tu sonrisa.",
+    "Cada flor me recuerda a tu ternura.",
+    "El sol acaricia tu nombre entre los pétalos.",
+    "Como la brisa, tu amor me envuelve suavemente.",
+    "En cada hoja nueva, encuentro un verso tuyo.",
+    "Tu risa florece como jardín en abril.",
   ];
 
   const poemasRaros = [
     "Me pregunto si tus manos sienten las mías, si tus ojos me buscan cuando cierro los míos. Te pienso en cada latido, te deseo en cada silencio. Y aunque no digas lo que guardas, yo no callo mi amor: grita en mí, me atraviesa, y no hay miedo que lo detenga.",
     "Si pudiera tomar tus pensamientos, los guardaría junto a los míos. Te extraño en cada esquina, te deseo en cada respiración. Y aunque el miedo intente frenarnos, mi corazón no deja de quererte.",
-  ];
+    "Cada vez que tu nombre cruza mi mente, el mundo se vuelve más intenso y peligroso. Quiero perderme en tus susurros, que me roben la calma, que me dejen desnudo de certezas y lleno de ti.",
+    "Tus silencios me enloquecen más que tus palabras. Cada gesto tuyo prende fuego a mis pensamientos, y no hay distancia que apague la urgencia de buscarte, de sentirte, de fundirnos en este deseo que nos quema.",
+];
+
 
   let lastPoem = null;
 

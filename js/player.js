@@ -1,8 +1,9 @@
 const images = [
   "./img/hero-love.jpg",
-  "./img/hero-fantasy.jpg",
-  "./img/hero-cry.jpg",
+  "./img/bff-hero.jfif",
   "./img/hero-red.jpg",
+  "./img/hero-kiss.jpg",
+  "./img/hero-kiss-int.jpg",
 ];
 
 let lastImage = null; // Mantener en memoria durante la sesión

@@ -42,24 +42,25 @@
     <script>
       const trivia = [
         {
-          question: "¿Cuál canción es mi favorita?",
-          options: ["Bohemian Rhapsody", "Love of My Life", "Somebody to Love"],
-          correct: "Love of My Life",
+          question: "¿Cual es mi jazista favorito?",
+          options: ["Rayce", "The King", "Armstrong"],
+          correct: "Armstrong",
         },
         {
-          question: "¿Qué canción bailamos juntos?",
-          options: ["Eres", "Imitadora", "Propuesta Indecente"],
-          correct: "Imitadora",
+          question:
+            "cual fua la primera cancion de escucgamos en nuestra primera cita?",
+          options: ["muchacha (ojos de papel)", "vivo", "oh my angel"],
+          correct: "muchacha (ojos de papel)",
         },
         {
-          question: "¿Cuál fue el primer poema que te regalé?",
-          options: ["Cuando te extraño", "Tu sonrisa", "Eterno atardecer"],
-          correct: "Cuando te extraño",
+          question: "Me contagiaste tu....",
+          options: ["Sonrisa/risa", "MiloJ", "tu labial/Lip gloss"],
+          correct: ["Sonrisa/risa", "MiloJ", "tu labial/Lip gloss"],
         },
         {
-          question: "¿Me dejarías besarte de nuevo?",
+          question: "aun te sientes fea/gorda?",
           options: ["Sí", "No", "Tal vez"],
-          correct: "Sí",
+          correct: "No",
         },
       ];
 
@@ -105,13 +106,26 @@
 
         buttons.forEach((btn) => {
           btn.disabled = true;
-          if (btn.textContent === q.correct)
+          if (
+            (Array.isArray(q.correct) && q.correct.includes(btn.textContent)) ||
+            btn.textContent === q.correct
+          ) {
             btn.classList.replace("btn-outline-primary", "btn-success");
-          else if (btn.textContent === selected && selected !== q.correct)
+          } else if (
+            btn.textContent === selected &&
+            !(Array.isArray(q.correct) && q.correct.includes(selected)) &&
+            selected !== q.correct
+          ) {
             btn.classList.replace("btn-outline-primary", "btn-danger");
+          }
         });
 
-        if (selected === q.correct) score++;
+        if (
+          (Array.isArray(q.correct) && q.correct.includes(selected)) ||
+          selected === q.correct
+        ) {
+          score++;
+        }
 
         setTimeout(() => {
           if (currentQuestion === trivia.length - 1) {
@@ -135,11 +149,11 @@
         if (selected === "Sí" || selected === "Tal vez") {
           reactionContent.innerHTML = `
             <div class="fade-in">
-              <p class="mb-2 fs-6">Entonces ven por el 7u7 😏</p>
+              <p class="mb-2 fs-6">ENSERIO CREES ESO AUN? ya voy a tu casa a demostrarte lo contrario</p>
               <img src="/img/kissmebottom.png"
                    alt="Ben Porel"
                    class="img-fluid rounded shadow-sm"
-                   style="max-width: 180px; border-radius: 0.5rem;">
+                   style="max-width: 180px; border-radius: 1.rem;">
               <div class="mt-2">
                 <a href="https://wa.me/+543812168577" target="_blank" class="btn btn-success btn-sm">
                   Ir a WhatsApp 💚
@@ -148,7 +162,7 @@
             </div>
           `;
         } else if (selected === "No") {
-          reactionContent.innerHTML = `<p class="text-muted fs-6">Bueno... 😅</p>`;
+          reactionContent.innerHTML = `<p class="text-muted fs-6">ASI ME GUSTAS!!</p>`;
         }
       }
 

@@ -1,6 +1,5 @@
 const images = [
   "./img/hero-love.jpg",
-  "./img/bff-hero.jfif",
   "./img/hero-red.jpg",
   "./img/hero-kiss.jpg",
   "./img/hero-kiss-int.jpg",
@@ -39,16 +38,16 @@ window.addEventListener("load", () => {
 // --- Reproductor ---
 const songs = [
   {
-    title: " been a long time",
-    file: "./music/been a long.mp3",
+    title: " tu parte de adelante",
+    file: "./music/delante.mp3",
   },
   {
-    title: "oh my angel",
-    file: "./music/my angel.mp3",
+    title: "loco (tu forma de ser)",
+    file: "./music/loco.mp3",
   },
   {
     title: "i💗you",
-    file: "./music/only you.mp3",
+    file: "./music/razon.mp3",
   },
 ];
 

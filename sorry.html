@@ -42,25 +42,32 @@
     <script>
       const trivia = [
         {
-          question: "¿Cual es mi jazista favorito?",
-          options: ["Rayce", "The King", "Armstrong"],
-          correct: "Armstrong",
+          question: "como te sentis conmigo?",
+          options: ["mal", "comoda", "bien", "adoro todo de ti"],
+          correct: "",
         },
         {
-          question:
-            "cual fua la primera cancion de escucgamos en nuestra primera cita?",
-          options: ["muchacha (ojos de papel)", "vivo", "oh my angel"],
-          correct: "muchacha (ojos de papel)",
+          question: "sale siesta juntos?",
+          options: ["si obvi", "nop"],
+          correct: "si obvi",
         },
         {
-          question: "Me contagiaste tu....",
-          options: ["Sonrisa/risa", "MiloJ", "tu labial/Lip gloss"],
-          correct: ["Sonrisa/risa", "MiloJ", "tu labial/Lip gloss"],
+          question: "que me gusta mas de ti",
+          options: [
+            "tu risa",
+            "tus besos, me encantan",
+            "tu pensamiento del amor",
+          ],
+          correct: [
+            "tu risa",
+            "tus besos, me encantan",
+            "tu pensamiento del amor",
+          ],
         },
         {
-          question: "aun te sientes fea/gorda?",
-          options: ["Sí", "No", "Tal vez"],
-          correct: "No",
+          question: "Tenes hambre después de verme?",
+          options: ["si obvi", " nop", "tal vez"],
+          correct: "si obvi",
         },
       ];
 
@@ -146,10 +153,10 @@
         reactionBox.classList.remove("d-none");
         reactionContent.innerHTML = "";
 
-        if (selected === "Sí" || selected === "Tal vez") {
+        if (selected === "si obvi" || selected === "tal vez") {
           reactionContent.innerHTML = `
             <div class="fade-in">
-              <p class="mb-2 fs-6">ENSERIO CREES ESO AUN? ya voy a tu casa a demostrarte lo contrario</p>
+              <p class="mb-2 fs-6">bueno veni de devorame de nuevo 7w7</p>
               <img src="/img/kissmebottom.png"
                    alt="Ben Porel"
                    class="img-fluid rounded shadow-sm"

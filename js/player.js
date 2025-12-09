@@ -3,6 +3,7 @@ const images = [
   "./img/hero-red.jpg",
   "./img/hero-kiss.jpg",
   "./img/hero-kiss-int.jpg",
+  "./img/hero-sleep.jpg",
 ];
 
 let lastImage = null; // Mantener en memoria durante la sesión
@@ -38,16 +39,16 @@ window.addEventListener("load", () => {
 // --- Reproductor ---
 const songs = [
   {
-    title: " tu parte de adelante",
-    file: "./music/delante.mp3",
+    title: "Total Eclipse of the Heart",
+    file: "./music/eclipse.mp3",
   },
   {
-    title: "loco (tu forma de ser)",
-    file: "./music/loco.mp3",
+    title: "La Isla Bonita",
+    file: "./music/islabonita.mp3",
   },
   {
-    title: "i💗you",
-    file: "./music/razon.mp3",
+    title: "I Will Survive",
+    file: "./music/survive.mp3",
   },
 ];
 

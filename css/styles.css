@@ -17,8 +17,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+<<<<<<< HEAD
   justify-content: center;
   height: 100vh !important;
+=======
+  justify-content: flex-start;
+  height: 100vh;
+>>>>>>> 39b141d (musica  y carrrusel de poemas)
 }
 
 #splash {
@@ -136,4 +141,24 @@ p {
   width: 100% !important;
   height: 70vh !important; /* ocupa el 60% del alto de la pantalla */
   object-fit: cover; /* recorta sin deformar */
+}
+
+.carousel-wrapper {
+  width: 100%;
+  max-width: 500px;
+  height: 650px; /* altura fija */
+  margin-top: 10px;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000; /* o transparente */
 }

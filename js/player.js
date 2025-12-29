@@ -39,16 +39,16 @@ window.addEventListener("load", () => {
 // --- Reproductor ---
 const songs = [
   {
-    title: "Total Eclipse of the Heart",
-    file: "./music/eclipse.mp3",
+    title: "TE AMO",
+    file: "./music/puente.mp3",
   },
   {
-    title: "La Isla Bonita",
-    file: "./music/islabonita.mp3",
+    title: "❤️❤️❤️",
+    file: "./music/cielo.mp3",
   },
   {
-    title: "I Will Survive",
-    file: "./music/survive.mp3",
+    title: "somos mas parecidos de lo que crees",
+    file: "./music/llevo.mp3",
   },
 ];
 
